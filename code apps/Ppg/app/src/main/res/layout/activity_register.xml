@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_backimage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="REGISTER"
+        android:textSize="35dp" />
+    <EditText
+        android:id="@+id/main_et_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buat Username"
+        android:layout_margin="30dp"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/main_btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:layout_marginHorizontal="30dp"
+        android:textSize="20dp"
+        android:backgroundTint="@color/green"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Silakan buat username untuk melanjutkan"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#888888"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="⚠️ Harap diingat!\nNickname yang kamu buat akan digunakan untuk masuk ke aplikasi dan menyimpan data hasil pengukuran. Pastikan kamu mencatatnya agar tidak lupa."
+        android:textSize="14sp"
+        android:textColor="#FF4444"/>
+
+
+</LinearLayout>

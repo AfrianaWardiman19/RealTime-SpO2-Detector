@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "670122702949",
+    "project_id": "monitoringppg-c2d79",
+    "storage_bucket": "monitoringppg-c2d79.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670122702949:android:2921f31af0ddc647776e8c",
+        "android_client_info": {
+          "package_name": "com.example.ppgekg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo3soyU3VrzgtBkrw0djc8bmc8vqpn32o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

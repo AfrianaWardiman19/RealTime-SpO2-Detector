@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="?android:attr/colorBackground">
+
+    <!-- Judul Halaman -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:background="@color/white"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_title_rekaman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔴 Rekaman PPG"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Status Rekaman -->
+    <TextView
+        android:id="@+id/tv_status_rekaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Menunggu..."
+        android:textSize="16sp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Grafik Gelombang PPG -->
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/chart_ppg_replay"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Line 1: IR kiri, RED tengah, Wave kanan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_ir_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="IR: -"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/tv_red_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="RED: -"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_wave_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Wave: -"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="end"
+                    android:layout_marginRight="5dp"/>
+            </LinearLayout>
+
+            <!-- Line 2: SpO2 kiri, HR kanan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/tv_spo2_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SpO2: -"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/teal_700" />
+
+            </LinearLayout>
+
+            <!-- Line 3: Rata-rata SpO2 -->
+            <TextView
+                android:id="@+id/tvRataRataSpO2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rata-rata SpO2: -"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/teal_700"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Line 4: Status -->
+            <TextView
+                android:id="@+id/tvSpO2Status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status: -"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textColor="@color/blue"
+                android:gravity="center" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/tv_stopwatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <!-- Tombol Kontrol -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Tombol Play -->
+        <Button
+            android:id="@+id/btn_play_replay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mulai"
+            android:textStyle="bold"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Tombol Pause -->
+        <Button
+            android:id="@+id/btn_pause_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:textStyle="bold"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"/>
+
+        <!-- Tombol Reset -->
+        <Button
+            android:id="@+id/btn_reset_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textStyle="bold"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+        <Button
+            android:id="@+id/btn_export_csv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Export CSV"
+            android:textStyle="bold"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

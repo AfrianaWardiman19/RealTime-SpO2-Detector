@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".MenuActivity">
+
+    <!-- Judul Menu -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:shadowColor="#66000000"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Tombol PPG -->
+    <Button
+        android:id="@+id/btn_ppg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 PPG (Cek SpO₂)"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Layout untuk dropdown PPG -->
+    <LinearLayout
+        android:id="@+id/layout_ppg_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        android:elevation="4dp"
+        android:background="#E8F5E9">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 🫀 Apa itu PPG dan SpO₂?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• PPG (Photoplethysmography) adalah teknik optik untuk mendeteksi perubahan volume darah menggunakan cahaya.\n\n• SpO₂ (Saturasi Oksigen) adalah persentase hemoglobin yang membawa oksigen dalam darah — indikator penting dalam kondisi pernapasan dan kesehatan jantung."
+            android:textSize="15sp"
+            android:textColor="#212121"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_ppg_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="▶ Masuk ke Pengukuran"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#388E3C"/>
+    </LinearLayout>
+    </LinearLayout>
