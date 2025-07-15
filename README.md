@@ -36,8 +36,6 @@ A compact, portable health monitoring device that uses Photoplethysmography (PPG
 
 ### 📌 Device Prototype – Various Angles
 <p align="center">
-  <img src="images/penggunaan.png" alt="Device Front" width="400"/>
-  <br/>
   <img src="images/seen%20from%20various%20angles.png" alt="Device Angles" width="400"/>
 </p>
 
