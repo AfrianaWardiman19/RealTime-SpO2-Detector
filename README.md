@@ -64,7 +64,7 @@ A compact, portable health monitoring device that uses Photoplethysmography (PPG
 
 ### 👋 Device in Use
 <p align="center">
-  <img src="images/gmabr%20penggunaan.png" alt="Usage Example" width="400"/>
+  <img src="images/%20penggunaan.png" alt="Usage Example" width="400"/>
 </p>
 
 ---
