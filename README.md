@@ -25,29 +25,47 @@ A compact, portable health monitoring device that uses Photoplethysmography (PPG
 ## 🖼️ Visual Overview
 
 ### 📌 Wiring Diagram
-![Wiring Diagram](images/wireng.png)
+<p align="center">
+  <img src="images/wireng.png" alt="Wiring Diagram" width="400"/>
+</p>
 
 ### 📌 Component Position
-![Component Position](images/component%20position.jpg)
+<p align="center">
+  <img src="images/component%20position.jpg" alt="Component Position" width="400"/>
+</p>
 
 ### 📌 Device Prototype – Various Angles
-![Usage Front](images/penggunaan.png)
-![Angles](images/seen%20from%20various%20angles.png)
+<p align="center">
+  <img src="images/penggunaan.png" alt="Device Front" width="400"/>
+  <br/>
+  <img src="images/seen%20from%20various%20angles.png" alt="Device Angles" width="400"/>
+</p>
 
 ### 📲 App Display – Realtime Monitoring
-![Display 1](images/display(1).jpg)
-![Display 2](images/display(2).jpg)
-![Display 3](images/display(3).jpg)
+<p align="center">
+  <img src="images/display(1).jpg" alt="App Display 1" width="400"/>
+  <br/>
+  <img src="images/display(2).jpg" alt="App Display 2" width="400"/>
+  <br/>
+  <img src="images/display(3).jpg" alt="App Display 3" width="400"/>
+</p>
 
 ### 📊 App Display – Record Section
-![Record 1](images/record(1).jpg)
-![Record 2](images/record(2).jpg)
+<p align="center">
+  <img src="images/record(1).jpg" alt="Record Page 1" width="400"/>
+  <br/>
+  <img src="images/record(2).jpg" alt="Record Page 2" width="400"/>
+</p>
 
 ### 🧪 Filtered PPG Signal
-![Filtered Signal](images/Filter%20Gelombang.png)
+<p align="center">
+  <img src="images/Filter%20Gelombang.png" alt="Filtered Signal" width="400"/>
+</p>
 
 ### 👋 Device in Use
-![Usage](images/gmabr%20penggunaan.png)
+<p align="center">
+  <img src="images/gmabr%20penggunaan.png" alt="Usage Example" width="400"/>
+</p>
 
 ---
 
